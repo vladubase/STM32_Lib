@@ -1,5 +1,5 @@
 /****
-	*	@name		STM32F0_RCC_PLL_48MHz
+	*	@name		STM32F0_SWD
 	*	@file 		InitSWD.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
