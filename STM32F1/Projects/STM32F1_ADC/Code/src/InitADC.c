@@ -31,10 +31,10 @@ void InitADC1CH1 (void) {
 	*/
 	
 	
-	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN |		// ADC 1 interface clock enable.
-					RCC_APB2ENR_AFIOEN;			// I/O port A clock enable.
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN |		// I/O port A clock enable.
+					RCC_APB2ENR_AFIOEN;			// Alternate Function I/O clock enable.
 	
-	RCC->APB2ENR |= RCC_APB2ENR_ADC1EN |		// Alternate Function I/O clock enable.
+	RCC->APB2ENR |= RCC_APB2ENR_ADC1EN |		// ADC 1 interface clock enable.
 					RCC_CFGR_ADCPRE_DIV6;		// PCLK2 / 6 = 12 MHz.
 	
 	/* **************************** PA0 ************************** */
