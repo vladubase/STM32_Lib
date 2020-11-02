@@ -7,7 +7,6 @@
 .\objects\main.o: C:\User Programs\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: C:\User Programs\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\Code\inc\InitRCC.h
-.\objects\main.o: .\Code\inc\InitMCO.h
 .\objects\main.o: .\Code\inc\InitSWD.h
 .\objects\main.o: .\Code\inc\InitGPIO.h
 .\objects\main.o: .\Code\inc\InitUART.h
