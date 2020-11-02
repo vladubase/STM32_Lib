@@ -1,12 +1,12 @@
 /****
-	*	@name		STM32F0_RCC_PLL_48MHz
+	*	@name		STM32F0_SWD
 	*	@file 		InitSWD.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
 	*	@date 		2-November-2020
-	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_RCC_PLL_48MHz
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_SWD
 	*
 *****/
 
