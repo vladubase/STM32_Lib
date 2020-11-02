@@ -6,29 +6,29 @@ I (CMSIS\inc\stm32f10x.h)(0x5F9C583B)
 I (CMSIS\inc\core_cm3.h)(0x4D5281A8)
 I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
 I (CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
-F (.\Code\src\main.c)(0x5F9C7AF6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/main.o -MD)
-I (Code\inc\main.h)(0x5F9C7888)
+F (.\Code\src\main.c)(0x5F9FFC6E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/main.o -MD)
+I (Code\inc\main.h)(0x5F9FFC67)
 I (CMSIS\inc\stm32f10x.h)(0x5F9C583B)
 I (CMSIS\inc\core_cm3.h)(0x4D5281A8)
 I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
 I (CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
 I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdbool.h)(0x5F5158DE)
-I (Code\inc\InitRCC.h)(0x5F9C5E18)
-I (Code\inc\InitSWD.h)(0x5F9C5863)
-F (.\Code\src\InitRCC.c)(0x5F9D2EBF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/initrcc.o -MD)
-I (Code\inc\InitRCC.h)(0x5F9C5E18)
+I (Code\inc\InitRCC.h)(0x5F9FFC48)
+I (Code\inc\InitSWD.h)(0x5F9FFC04)
+F (.\Code\src\InitRCC.c)(0x5F9FFC29)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/initrcc.o -MD)
+I (Code\inc\InitRCC.h)(0x5F9FFC48)
 I (CMSIS\inc\stm32f10x.h)(0x5F9C583B)
 I (CMSIS\inc\core_cm3.h)(0x4D5281A8)
 I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
 I (CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
-F (.\Code\src\InitSWD.c)(0x5F9D2ED6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/initswd.o -MD)
-I (Code\inc\InitSWD.h)(0x5F9C5863)
+F (.\Code\src\InitSWD.c)(0x5F9FFC22)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/initswd.o -MD)
+I (Code\inc\InitSWD.h)(0x5F9FFC04)
 I (CMSIS\inc\stm32f10x.h)(0x5F9C583B)
 I (CMSIS\inc\core_cm3.h)(0x4D5281A8)
 I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
 I (CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
-F (.\Code\src\InitMCO.c)(0x5F9C664D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/initmco.o -MD)
-I (Code\inc\InitMCO.h)(0x5F9C5E01)
+F (.\Code\src\InitMCO.c)(0x5F9FFC50)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F1_RCC_PLL_72MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o ./objects/initmco.o -MD)
+I (Code\inc\InitMCO.h)(0x5F9FFC63)
 I (CMSIS\inc\stm32f10x.h)(0x5F9C583B)
 I (CMSIS\inc\core_cm3.h)(0x4D5281A8)
 I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
