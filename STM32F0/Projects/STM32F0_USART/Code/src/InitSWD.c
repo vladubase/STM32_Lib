@@ -1,5 +1,5 @@
 /****
-	*	@name		STM32F0_USART
+	*	@name		STM32F0_SWD
 	*	@file 		InitSWD.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka

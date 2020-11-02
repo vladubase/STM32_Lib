@@ -1,5 +1,5 @@
 /****
-	*	@name		STM32F0_USART
+	*	@name		STM32F0_RCC
 	*	@file 		InitRCC.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka

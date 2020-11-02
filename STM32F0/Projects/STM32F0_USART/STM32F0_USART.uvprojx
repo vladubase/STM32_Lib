@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\STM32F0_USART;.\CMSIS\inc;.\Code\inc</IncludePath>
+              <IncludePath>..\STM32F0_USART;.\CMSIS\inc;.\Code\inc;.\FreeRTOS\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
