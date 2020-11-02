@@ -4,8 +4,8 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.1
-	*	@date 		2-November-2020
+	*	@version	V1.0
+	*	@date 		31-October-2020
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_GPIO
 	*
 *****/
@@ -24,19 +24,19 @@ int main (void) {
 	
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
-//		InitMCO ();
 		InitSWD ();
 		InitGPIO ();
 	
 	// MAIN CYCLE
 		while (1) {
-			// If button pushed - LED PC13 turn on.
-			if ((GPIOC->IDR & GPIO_IDR_IDR14) == GPIO_IDR_IDR14) {
+			// If button pushed - Blink LED PC13.
+			if ((GPIOC->IDR & GPIO_IDR_IDR14) == 0) {
 				// Blink LED PC13.
 				GPIOC->ODR ^= GPIO_ODR_ODR13;
 				for (i = 0; i < 8e5; i++)
 					__ASM ("nop");
 			} else {
+				// Continuous light of PC13.
 				GPIOC->ODR &= ~GPIO_ODR_ODR13;
 			}
 		}

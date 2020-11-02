@@ -231,7 +231,7 @@
       <GroupNumber>3</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Code\src\main.c</PathWithFileName>
@@ -243,11 +243,11 @@
       <GroupNumber>3</GroupNumber>
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Code\src\InitRCC.c</PathWithFileName>
-      <FilenameWithoutPath>InitRCC.c</FilenameWithoutPath>
+      <PathWithFileName>.\Code\src\InitGPIO.c</PathWithFileName>
+      <FilenameWithoutPath>InitGPIO.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -258,8 +258,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Code\src\InitSWD.c</PathWithFileName>
-      <FilenameWithoutPath>InitSWD.c</FilenameWithoutPath>
+      <PathWithFileName>.\Code\src\InitRCC.c</PathWithFileName>
+      <FilenameWithoutPath>InitRCC.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -270,20 +270,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Code\src\InitMCO.c</PathWithFileName>
-      <FilenameWithoutPath>InitMCO.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>7</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\Code\src\InitGPIO.c</PathWithFileName>
-      <FilenameWithoutPath>InitGPIO.c</FilenameWithoutPath>
+      <PathWithFileName>.\Code\src\InitSWD.c</PathWithFileName>
+      <FilenameWithoutPath>InitSWD.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

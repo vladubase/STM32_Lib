@@ -409,6 +409,11 @@
               <FilePath>.\Code\src\main.c</FilePath>
             </File>
             <File>
+              <FileName>InitGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\InitGPIO.c</FilePath>
+            </File>
+            <File>
               <FileName>InitRCC.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Code\src\InitRCC.c</FilePath>
@@ -417,16 +422,6 @@
               <FileName>InitSWD.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Code\src\InitSWD.c</FilePath>
-            </File>
-            <File>
-              <FileName>InitMCO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Code\src\InitMCO.c</FilePath>
-            </File>
-            <File>
-              <FileName>InitGPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Code\src\InitGPIO.c</FilePath>
             </File>
           </Files>
         </Group>
