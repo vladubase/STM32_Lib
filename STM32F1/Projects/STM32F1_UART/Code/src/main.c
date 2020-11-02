@@ -6,6 +6,7 @@
 	*				<vladubase@gmail.com>.
 	*	@version	V1.1
 	*	@date 		1-November-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_UART
 	*
 *****/
 
@@ -23,13 +24,12 @@ int main (void) {
 	
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
-//		InitMCO ();
 		InitSWD ();
 		InitGPIO ();
 		InitUART ();
 	
 	// FREERTOS TASKS
-		xTaskCreate (vTaskUSART2SendMessage, "Send message USART 2", 32, NULL, 1, NULL);
+		xTaskCreate (vTaskUSART2SendMessage, "Send message via USART 2", 32, NULL, 1, NULL);
 		
 	// Start FreeRTOS Sheduler.
 	// RTOS should never go into the body of an infinite while.
