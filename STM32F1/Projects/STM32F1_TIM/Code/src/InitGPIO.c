@@ -1,0 +1,44 @@
+/****
+	*	@name		STM32F1_TIM
+	*	@file 		InitGPIO.c
+	*
+	*	@author 	Uladzislau 'vladubase' Dubatouka
+	*				<vladubase@gmail.com>
+	*	@version	V1.0
+	*	@date 		31-October-2020
+	*
+*****/
+
+
+/************************************** Includes **************************************/
+
+#include "InitGPIO.h"
+
+
+/************************************** Function **************************************/
+
+void InitGPIO (void) {
+   /*
+	*	@brief	This function setup I/O ports.
+	*	@param	None.
+	*	@retval	None.
+	*/
+	
+	
+	RCC->APB2ENR |= RCC_APB2ENR_IOPCEN;			// IO port C clock enable
+	
+	/* *************************** PC14 ************************** */
+	// Input mode (reset state).
+	GPIOC->CRH &= ~GPIO_CRH_MODE14;
+	
+	// Input with pull-up / pull-down.
+	GPIOC->CRH |= GPIO_CRH_CNF14_1;
+	
+	
+	/* *************************** PC13 ************************** */
+	// Output mode, max speed 2 MHz.
+	GPIOC->CRH |= GPIO_CRH_MODE13_1;
+	
+	// General purpose output push-pull.
+	GPIOC->CRH &= ~GPIO_CRH_CNF13;
+}
