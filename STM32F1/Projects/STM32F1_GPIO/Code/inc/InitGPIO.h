@@ -7,8 +7,9 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.0
-	*	@date 		30-October-2020
+	*	@version	V1.1
+	*	@date 		2-November-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_GPIO
 	*
 *****/
 
