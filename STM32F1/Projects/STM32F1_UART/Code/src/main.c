@@ -4,7 +4,7 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>.
-	*	@version	V1.1
+	*	@version	V1.0
 	*	@date 		1-November-2020
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_UART
 	*
@@ -32,13 +32,13 @@ int main (void) {
 		xTaskCreate (vTaskUSART2SendMessage, "Send message via USART 2", 32, NULL, 1, NULL);
 		
 	// Start FreeRTOS Sheduler.
-	// RTOS should never go into the body of an infinite while.
 		vTaskStartScheduler ();
 	
 	// MAIN CYCLE
 		while (true) {
 			// An error handler.
-			// Happens when an unexpected error occurs in the RTOS scheduler.
+			// Happens when an unexpected error occurs in the RTOS scheduler,
+			// because RTOS should never go into the body of an infinite while.
 			// Blink LED PC13.
 			GPIOC->ODR ^= GPIO_ODR_ODR13;
 			vTaskDelay (50);
