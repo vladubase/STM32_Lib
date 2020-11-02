@@ -4,8 +4,8 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.1
-	*	@date 		2-November-2020
+	*	@version	V1.0
+	*	@date 		1-November-2020
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_UART
 	*
 *****/
@@ -83,6 +83,24 @@ void USART1SendString (char* str) {
 	}
 }
 
+//void USART1_IRQHandler (void) {
+//	// Read data register not empty.
+//	if (USART1->SR & USART_SR_RXNE) {
+//		USART1->SR &= ~USART_SR_RXNE;			// Clear flag.
+//		
+//		if (USART1->DR == '0') {
+//			// LED PC13 off
+//			USART1SendString ("LED OFF\r\n");
+//			GPIOC->BSRR = GPIO_BSRR_BS13;
+//		}
+//		if (USART1->DR == '1') {
+//			// LED PC13 on
+//			USART1SendString ("LED ON\r\n");
+//			GPIOC->BSRR = GPIO_BSRR_BR13;
+//		}
+//	}
+//}
+
 /************************************** USART 2 ***************************************/
 
 void InitUSART2 (void) {
@@ -141,3 +159,21 @@ void USART2SendString (char* str) {
 		USART2SendByte (str[i++]);
 	}
 }
+
+//void USART2_IRQHandler (void) {
+//	// Read data register not empty.
+//	if (USART2->SR & USART_SR_RXNE) {
+//		USART2->SR &= ~USART_SR_RXNE;			// Clear flag.
+//		
+//		if (USART2->DR == '0') {
+//			// LED PC13 off
+//			USART2SendString ("LED OFF\r\n");
+//			GPIOC->BSRR = GPIO_BSRR_BS13;
+//		}
+//		if (USART2->DR == '1') {
+//			// LED PC13 on
+//			USART2SendString ("LED ON\r\n");
+//			GPIOC->BSRR = GPIO_BSRR_BR13;
+//		}
+//	}
+//}

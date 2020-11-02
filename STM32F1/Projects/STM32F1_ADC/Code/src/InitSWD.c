@@ -1,12 +1,12 @@
 /****
-	*	@name		STM32F1_RCC_PLL_72MHz
+	*	@name		STM32F1_SWD
 	*	@file 		InitSWD.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.1
-	*	@date 		2-November-2020
-	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_RCC_PLL_72MHz
+	*	@version	V1.0
+	*	@date 		31-October-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_SWD
 	*
 *****/
 
