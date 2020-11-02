@@ -6,6 +6,7 @@
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
 	*	@date 		31-October-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_SWD
 	*
 *****/
 
@@ -24,8 +25,7 @@ void InitSWD (void) {
 	*	@retval	None.
 	*/
 	
-	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN |			// GPIOA clock enable.
-					RCC_APB2ENR_AFIOEN;				// Alternate Function I/O clock enable.
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;			// GPIOA clock enable
 	
 	/* ************************* PA14..13 ************************ */
 	// Output mode, max speed 50 MHz.

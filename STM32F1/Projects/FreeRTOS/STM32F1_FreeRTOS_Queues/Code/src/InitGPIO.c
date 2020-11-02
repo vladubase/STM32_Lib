@@ -6,6 +6,7 @@
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
 	*	@date 		31-October-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_GPIO
 	*
 *****/
 

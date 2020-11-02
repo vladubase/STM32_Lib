@@ -9,6 +9,7 @@
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
 	*	@date 		1-November-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/FreeRTOS/STM32F1_FreeRTOS_Queues
 	*
 *****/
 
@@ -21,7 +22,6 @@
 
 // User Headers
 #include "InitRCC.h"
-#include "InitMCO.h"
 #include "InitSWD.h"
 #include "InitGPIO.h"
 #include "InitUART.h"
