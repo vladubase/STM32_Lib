@@ -4,8 +4,8 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>.
-	*	@version	V1.1
-	*	@date 		2-November-2020
+	*	@version	V1.0
+	*	@date 		1-November-2020
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_TIM
 	*
 *****/
@@ -24,7 +24,7 @@ int main (void) {
 	
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
-		InitSWD ();
+		InitSWD ();	
 		InitGPIO ();
 		InitTIM ();
 	
@@ -32,13 +32,13 @@ int main (void) {
 		xTaskCreate (vTaskDimmingLED, "Dimming LED on A0", 32, NULL, 1, NULL);
 		
 	// Start FreeRTOS Sheduler.
-	// RTOS should never go into the body of an infinite while.
 		vTaskStartScheduler ();
 	
 	// MAIN CYCLE
 		while (true) {
 			// An error handler.
-			// Happens when an unexpected error occurs in the RTOS scheduler.
+			// Happens when an unexpected error occurs in the RTOS scheduler,
+			// because RTOS should never go into the body of an infinite while.
 			// Blink LED PC13.
 			GPIOC->ODR ^= GPIO_ODR_ODR13;
 			vTaskDelay (50);
@@ -50,7 +50,7 @@ int main (void) {
 
 void vTaskDimmingLED (void *arg) {
    /*
-	*	@brief	None.
+	*	@brief	vTaskDimmingLED.
 	*	@param	None.
 	*	@retval	None.
 	*/
