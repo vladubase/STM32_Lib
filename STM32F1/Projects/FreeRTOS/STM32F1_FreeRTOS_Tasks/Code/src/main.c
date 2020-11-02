@@ -6,6 +6,7 @@
 	*				<vladubase@gmail.com>.
 	*	@version	V1.0
 	*	@date 		1-November-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/FreeRTOS/STM32F1_FreeRTOS_Tasks
 	*
 *****/
 
@@ -23,22 +24,21 @@ int main (void) {
 	
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
-//		InitMCO ();
 		InitSWD ();
 		InitGPIO ();
 	
-	// MAIN ALGORITHM
+	// INITIALIZE TASKS
 		xTaskCreate (vTaskBlinkPC13, "Blink PC13 when button on PC14 pushed", 32, NULL, 1, NULL);
 		
-	// Start FreeRTOS Sheduler.
-	// RTOS should never go into the body of an infinite while.
+	// START FreeRTOS SHEDULER.
 		vTaskStartScheduler ();
 	
 	// MAIN CYCLE
 		while (true) {
 			// An error handler.
-			// Happens when an unexpected error occurs in the RTOS scheduler.
-			// Blink LED PC13.
+			// Happens when an unexpected error occurs in the RTOS scheduler,
+			// because RTOS should never go into the body of an infinite while.
+			// Blink LED PC13 frequently.
 			GPIOC->ODR ^= GPIO_ODR_ODR13;
 			vTaskDelay (50);
 		}
