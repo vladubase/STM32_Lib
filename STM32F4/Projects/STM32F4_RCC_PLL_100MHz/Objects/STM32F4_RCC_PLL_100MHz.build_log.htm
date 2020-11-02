@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Uladzislau Dubatouka, BNTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.32.0.0
+Toolchain Path:  C:\User Programs\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14.1
+Assembler:       Armasm.exe V6.14.1
+Linker/Locator:  ArmLink.exe V6.14.1
+Library Manager: ArmAr.exe V6.14.1
+Hex Converter:   FromElf.exe V6.14.1
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+D:\Documents\Workspace\Microcontrollers\STM32_Lib\STM32F4\Projects\STM32F4_RCC_PLL_100MHz\STM32F4_RCC_PLL_100MHz.uvprojx
+Project File Date:  11/02/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14.1', folder: 'C:\User Programs\Keil\ARM\ARMCLANG\Bin'
+Build target 'STM32F4_RCC'
+Code/src/InitRCC.c(39): error: use of undeclared identifier 'RCC_CFGR_PLLXTPRE_PREDIV1'
+        RCC->CFGR |= RCC_CFGR_PLLXTPRE_PREDIV1;                                         // PREDIV1 clock not divided for PLL entry.     
+                     ^
+Code/src/InitRCC.c(40): error: use of undeclared identifier 'RCC_CFGR_PLLM_8'
+        RCC->CFGR |= RCC_CFGR_PLLM_8;                                                           // PLL input clock*2: 24 MHz * 2 = 48 MHz.
+                     ^
+2 errors generated.
+compiling InitRCC.c...
+assembling startup_stm32f411xe.s...
+compiling main.c...
+CMSIS/src/system_stm32f4xx.c(870): warning: while loop has empty body [-Wempty-body]
+  while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+                                                                   ^
+CMSIS/src/system_stm32f4xx.c(870): note: put the semicolon on a separate line to silence this warning
+1 warning generated.
+compiling system_stm32f4xx.c...
+".\Objects\STM32F4_RCC_PLL_100MHz.axf" - 2 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
