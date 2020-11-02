@@ -8,8 +8,8 @@ I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
 I (.\CMSIS\inc\core_cmInstr.h)(0x547D9682)
 I (.\CMSIS\inc\core_cmFunc.h)(0x547D9682)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x54808D0E)
-F (.\Code\src\main.c)(0x5F9C4551)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Code\inc\main.h)(0x5F9C453D)
+F (.\Code\src\main.c)(0x5FA05F2A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Code\inc\main.h)(0x5FA05F5D)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5F99FA35)
 I (.\CMSIS\inc\core_cm0.h)(0x547D9682)
 I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -17,9 +17,9 @@ I (.\CMSIS\inc\core_cmInstr.h)(0x547D9682)
 I (.\CMSIS\inc\core_cmFunc.h)(0x547D9682)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x54808D0E)
 I (C:\User Programs\Keil\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
-I (.\Code\inc\InitRCC.h)(0x5F9C0B6A)
-I (.\Code\inc\InitSWD.h)(0x5F9C0BF9)
-I (.\Code\inc\InitGPIO.h)(0x5F9C0B76)
+I (.\Code\inc\InitRCC.h)(0x5F9FF9D5)
+I (.\Code\inc\InitSWD.h)(0x5FA05F4A)
+I (.\Code\inc\InitGPIO.h)(0x5FA05B17)
 I (.\FreeRTOS\inc\FreeRTOS.h)(0x5F6A66CD)
 I (C:\User Programs\Keil\ARM\ARMCC\include\stddef.h)(0x5F63CDCC)
 I (.\Code\inc\FreeRTOSConfig.h)(0x5F9C1DA9)
@@ -31,24 +31,24 @@ I (.\FreeRTOS\inc\mpu_wrappers.h)(0x5F6A66CD)
 I (.\FreeRTOS\inc\task.h)(0x5F6A66CD)
 I (.\FreeRTOS\inc\list.h)(0x5F6A66CD)
 I (.\FreeRTOS\inc\queue.h)(0x5F6A66CD)
-F (.\Code\src\InitRCC.c)(0x5F9C2456)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initrcc.o --omf_browse .\objects\initrcc.crf --depend .\objects\initrcc.d)
-I (.\Code\inc\InitRCC.h)(0x5F9C0B6A)
+F (.\Code\src\InitRCC.c)(0x5F9FF9D2)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initrcc.o --omf_browse .\objects\initrcc.crf --depend .\objects\initrcc.d)
+I (.\Code\inc\InitRCC.h)(0x5F9FF9D5)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5F99FA35)
 I (.\CMSIS\inc\core_cm0.h)(0x547D9682)
 I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
 I (.\CMSIS\inc\core_cmInstr.h)(0x547D9682)
 I (.\CMSIS\inc\core_cmFunc.h)(0x547D9682)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x54808D0E)
-F (.\Code\src\InitSWD.c)(0x5F9C0B7A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initswd.o --omf_browse .\objects\initswd.crf --depend .\objects\initswd.d)
-I (.\Code\inc\InitSWD.h)(0x5F9C0BF9)
+F (.\Code\src\InitSWD.c)(0x5FA05F45)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initswd.o --omf_browse .\objects\initswd.crf --depend .\objects\initswd.d)
+I (.\Code\inc\InitSWD.h)(0x5FA05F4A)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5F99FA35)
 I (.\CMSIS\inc\core_cm0.h)(0x547D9682)
 I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
 I (.\CMSIS\inc\core_cmInstr.h)(0x547D9682)
 I (.\CMSIS\inc\core_cmFunc.h)(0x547D9682)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x54808D0E)
-F (.\Code\src\InitGPIO.c)(0x5F9C0B71)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initgpio.o --omf_browse .\objects\initgpio.crf --depend .\objects\initgpio.d)
-I (.\Code\inc\InitGPIO.h)(0x5F9C0B76)
+F (.\Code\src\InitGPIO.c)(0x5FA05B14)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_FreeRTOS -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initgpio.o --omf_browse .\objects\initgpio.crf --depend .\objects\initgpio.d)
+I (.\Code\inc\InitGPIO.h)(0x5FA05B17)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5F99FA35)
 I (.\CMSIS\inc\core_cm0.h)(0x547D9682)
 I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)

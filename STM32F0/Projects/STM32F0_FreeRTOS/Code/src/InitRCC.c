@@ -1,11 +1,12 @@
 /****
-	*	@name		STM32F0_FreeRTOS
+	*	@name		STM32F0_RCC_PLL_48MHz
 	*	@file 		InitRCC.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
-	*	@date 		30-October-2020
+	*	@date 		2-November-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_RCC_PLL_48MHz
 	*
 *****/
 
@@ -21,7 +22,7 @@ void InitRCC (void) {
    /*
 	*	@brief	This function setup RCC. Use external crystal on 24 MHz.
 	*	@param	None.
-	*	@retval	None.
+	*	@retval	None
 	*/
 	
 	RCC->CR |= RCC_CR_HSEON; 							// External High Speed clock enable.
@@ -33,11 +34,6 @@ void InitRCC (void) {
 	
 	RCC->CFGR |= RCC_CFGR_HPRE_DIV1;					// AHB = SYSCLK.
 	RCC->CFGR |= RCC_CFGR_PPRE_DIV1;					// APB = SYSCLK.
-	
-	// Pre-clean bits
-	RCC->CFGR &= ~RCC_CFGR_PLLMULL;               		// Clear PLLMULL bits.
-	RCC->CFGR &= ~RCC_CFGR_PLLSRC;						// Clear PLLSRC bits.
-	RCC->CFGR &= ~RCC_CFGR_PLLXTPRE;					// Clear PLLXTPRE bits.
 	
 	RCC->CFGR |= RCC_CFGR_PLLSRC_PREDIV1; 				// PREDIV1 clock selected as PLL entry clock source.
 	RCC->CFGR |= RCC_CFGR_PLLXTPRE_PREDIV1; 			// PREDIV1 clock not divided for PLL entry.

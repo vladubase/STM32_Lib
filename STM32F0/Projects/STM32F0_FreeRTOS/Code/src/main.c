@@ -5,7 +5,8 @@
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>.
 	*	@version	V1.0
-	*	@date 		30-October-2020
+	*	@date 		31-October-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_FreeRTOS
 	*
 *****/
 
@@ -30,13 +31,13 @@ int main (void) {
 		xTaskCreate (vTask1, "Name of Task 1", 32, NULL, 1, NULL);
 		xTaskCreate (vTask2, "Name of Task 2", 32, NULL, 1, NULL);
 		
-		// Start FreeRTOS Sheduler.
-		// RTOS should never go into the body of an infinite while.
+	// START FreeRTOS SHEDULER.
 		vTaskStartScheduler ();
 	
 	// MAIN CYCLE
 		while (true) {
-			// An error handler, such as a blinking ErrorLED.
+			// An error handler, such as a blinking ErrorLED, because
+			// RTOS should never go into the body of an infinite while.
 			// Happens when an unexpected error occurs in the RTOS scheduler.
 			
 		}

@@ -2,13 +2,14 @@
 #define _INIT_SWD_H_
 
 /****
-	*	@name		STM32F0_FreeRTOS
+	*	@name		STM32F0_SWD
 	*	@file 		InitSWD.h
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
-	*	@date 		30-October-2020
+	*	@date 		2-November-2020
+	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_SWD
 	*
 *****/
 
