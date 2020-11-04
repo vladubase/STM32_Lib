@@ -19,16 +19,6 @@
 
 /************************************** Function **************************************/
 
-void InitFLASH (void) {
-   /*
-	*	@brief	This function setup internal FLASH.
-	*	@param	None.
-	*	@retval	None.
-	*/
-	
-//	FLASHRemoveFirmware ();
-}
-
 void FLASHUnlock (void) {
 	// These bits represent the keys to unlock the FPEC.
 	FLASH->KEYR = FLASH_KEY1;

@@ -25,14 +25,13 @@ int main (void) {
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
 		InitSWD ();
-//		InitFLASH ();
 	
 	// Address: Page 127 0x0801FC00 - 0x0801FFFF 1 Kbyte
-	// Data: _Hello,  world!_
-		FLASHWriteData (0x0801FC00,			0x6C65485F);
-		FLASHWriteData (0x0801FC00 + 0x4,	0x202C6F6C);
-		FLASHWriteData (0x0801FC00 + 0x8,	0x726F7720);
-		FLASHWriteData (0x0801FC00 + 0xC,	0x5F21646C);
+	// Data: Hello,  world!   
+		FLASHWriteData (0x0801FC00,			0x6C6C6548);
+		FLASHWriteData (0x0801FC00 + 0x4,	0x57202C6F);
+		FLASHWriteData (0x0801FC00 + 0x8,	0x646C726F);
+		FLASHWriteData (0x0801FC00 + 0xC,	0x20202021);
 	
 	// MAIN CYCLE
 		while (1) {
