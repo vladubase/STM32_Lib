@@ -1,0 +1,44 @@
+Dependencies for Project 'STM32F1_I2C', Target 'STM32F1_I2C': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\Startup\startup_stm32f10x_md.s)(0x4D788322)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 532" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (.\CMSIS\src\system_stm32f10x.c)(0x4D788300)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F1_I2C -I .\CMSIS\inc -I .\Code\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (.\CMSIS\inc\stm32f10x.h)(0x5F9C583B)
+I (.\CMSIS\inc\core_cm3.h)(0x4D5281A8)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
+F (.\Code\src\main.c)(0x5FA7E870)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F1_I2C -I .\CMSIS\inc -I .\Code\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Code\inc\main.h)(0x5FA7D33A)
+I (.\CMSIS\inc\stm32f10x.h)(0x5F9C583B)
+I (.\CMSIS\inc\core_cm3.h)(0x4D5281A8)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (.\Code\inc\InitRCC.h)(0x5FA0444C)
+I (.\Code\inc\InitSWD.h)(0x5FA0445F)
+I (.\Code\inc\InitGPIO.h)(0x5FA044C9)
+I (.\Code\inc\InitI2C.h)(0x5FA7EA0D)
+F (.\Code\src\InitRCC.c)(0x5FA04452)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F1_I2C -I .\CMSIS\inc -I .\Code\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o .\objects\initrcc.o --omf_browse .\objects\initrcc.crf --depend .\objects\initrcc.d)
+I (.\Code\inc\InitRCC.h)(0x5FA0444C)
+I (.\CMSIS\inc\stm32f10x.h)(0x5F9C583B)
+I (.\CMSIS\inc\core_cm3.h)(0x4D5281A8)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
+F (.\Code\src\InitSWD.c)(0x5FA04457)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F1_I2C -I .\CMSIS\inc -I .\Code\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o .\objects\initswd.o --omf_browse .\objects\initswd.crf --depend .\objects\initswd.d)
+I (.\Code\inc\InitSWD.h)(0x5FA0445F)
+I (.\CMSIS\inc\stm32f10x.h)(0x5F9C583B)
+I (.\CMSIS\inc\core_cm3.h)(0x4D5281A8)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
+F (.\Code\src\InitI2C.c)(0x5FA7EE32)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F1_I2C -I .\CMSIS\inc -I .\Code\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o .\objects\initi2c.o --omf_browse .\objects\initi2c.crf --depend .\objects\initi2c.d)
+I (.\Code\inc\InitI2C.h)(0x5FA7EA0D)
+I (.\CMSIS\inc\stm32f10x.h)(0x5F9C583B)
+I (.\CMSIS\inc\core_cm3.h)(0x4D5281A8)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+F (.\Code\src\InitGPIO.c)(0x5FA043FB)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F1_I2C -I .\CMSIS\inc -I .\Code\inc-I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"C:\User Programs\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_MD-o .\objects\initgpio.o --omf_browse .\objects\initgpio.crf --depend .\objects\initgpio.d)
+I (.\Code\inc\InitGPIO.h)(0x5FA044C9)
+I (.\CMSIS\inc\stm32f10x.h)(0x5F9C583B)
+I (.\CMSIS\inc\core_cm3.h)(0x4D5281A8)
+I (C:\User Programs\Keil\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7882FA)
