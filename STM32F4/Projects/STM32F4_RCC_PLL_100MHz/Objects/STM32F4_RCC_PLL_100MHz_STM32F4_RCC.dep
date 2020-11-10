@@ -1,30 +1,0 @@
-Dependencies for Project 'STM32F4_RCC_PLL_100MHz', Target 'STM32F4_RCC': (DO NOT MODIFY !)
-CompilerVersion: 6140001::V6.14.1::ARMCLANG
-F (.\Startup\startup_stm32f411xe.s)(0x582097A0)(--target=arm-arm-none-eabi -mcpu=cortex-m0 -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-Wa,armasm,--pd,"__UVISION_VERSION SETA 532" -Wa,armasm,--pd,"STM32F030x6 SETA 1"-o ./objects/startup_stm32f411xe.o)
-F (.\CMSIS\src\system_stm32f4xx.c)(0x5F9B1CD4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F4_RCC_PLL_100MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o ./objects/system_stm32f4xx.o -MD)
-I (CMSIS\inc\stm32f4xx.h)(0x5F9B1C69)
-I (CMSIS\inc\core_cm4.h)(0x581CC64D)
-I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
-I (CMSIS\inc\core_cmInstr.h)(0x581CC64D)
-I (CMSIS\inc\core_cmFunc.h)(0x581CC64D)
-I (CMSIS\inc\core_cmSimd.h)(0x581CC64D)
-I (CMSIS\inc\system_stm32f4xx.h)(0x582097AB)
-F (.\Code\src\main.c)(0x5FA061A2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F4_RCC_PLL_100MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o ./objects/main.o -MD)
-I (Code\inc\main.h)(0x5FA061C9)
-I (CMSIS\inc\stm32f4xx.h)(0x5F9B1C69)
-I (CMSIS\inc\core_cm4.h)(0x581CC64D)
-I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
-I (CMSIS\inc\core_cmInstr.h)(0x581CC64D)
-I (CMSIS\inc\core_cmFunc.h)(0x581CC64D)
-I (CMSIS\inc\core_cmSimd.h)(0x581CC64D)
-I (CMSIS\inc\system_stm32f4xx.h)(0x582097AB)
-I (Code\inc\InitRCC.h)(0x5FA061DA)
-F (.\Code\src\InitRCC.c)(0x5FA06272)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../STM32F4_RCC_PLL_100MHz -I ./CMSIS/inc -I ./Code/inc-I"C:/Users/Uladzislau Dubatouka/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include"-I"C:/User Programs/Keil/ARM/CMSIS/Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o ./objects/initrcc.o -MD)
-I (Code\inc\InitRCC.h)(0x5FA061DA)
-I (CMSIS\inc\stm32f4xx.h)(0x5F9B1C69)
-I (CMSIS\inc\core_cm4.h)(0x581CC64D)
-I (C:\User Programs\Keil\ARM\ARMCLANG\include\stdint.h)(0x5F5158DE)
-I (CMSIS\inc\core_cmInstr.h)(0x581CC64D)
-I (CMSIS\inc\core_cmFunc.h)(0x581CC64D)
-I (CMSIS\inc\core_cmSimd.h)(0x581CC64D)
-I (CMSIS\inc\system_stm32f4xx.h)(0x582097AB)

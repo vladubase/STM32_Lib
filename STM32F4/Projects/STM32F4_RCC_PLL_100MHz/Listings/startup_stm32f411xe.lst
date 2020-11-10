@@ -775,19 +775,19 @@ ARM Macro Assembler    Page 12
               00000400 
               00000200 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
-ork --depend=.\objects\startup_stm32f411xe.d -o.\objects\startup_stm32f411xe.o 
--I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\startup_stm32f411xe.d -o.\objects\startup_stm32f41
+1xe.o -I"C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_D
 
 
 
 ARM Macro Assembler    Page 13 
 
 
-.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include" -I"C:\User Programs\Keil\ARM\CMSI
-S\Include" --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 532"
- --predefine="STM32F030x6 SETA 1" --list=.\listings\startup_stm32f411xe.lst Sta
-rtup\startup_stm32f411xe.s
+FP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include" -I"C:\User Programs\Keil\A
+RM\CMSIS\Include" --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SE
+TA 532" --predefine="STM32F411xE SETA 1" --list=.\listings\startup_stm32f411xe.
+lst Startup\startup_stm32f411xe.s
 
 
 
@@ -1651,4 +1651,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-423 symbols in table
+424 symbols in table

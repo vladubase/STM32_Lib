@@ -9,54 +9,41 @@ License Information: Uladzislau Dubatouka, BNTU, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.32.0.0
-Toolchain Path:  C:\User Programs\Keil\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.14.1
-Assembler:       Armasm.exe V6.14.1
-Linker/Locator:  ArmLink.exe V6.14.1
-Library Manager: ArmAr.exe V6.14.1
-Hex Converter:   FromElf.exe V6.14.1
+Toolchain Path:  C:\User Programs\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
 CPU DLL:         SARMCM3.DLL V5.32.0.0
-Dialog DLL:      DARMCM1.DLL V1.19.4.0
-Target DLL:      UL2CM3.DLL V1.163.9.0
-Dialog DLL:      TARMCM1.DLL V1.14.3.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
 D:\Documents\Workspace\Microcontrollers\STM32_Lib\STM32F4\Projects\STM32F4_RCC_PLL_100MHz\STM32F4_RCC_PLL_100MHz.uvprojx
-Project File Date:  11/02/2020
+Project File Date:  11/10/2020
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.14.1', folder: 'C:\User Programs\Keil\ARM\ARMCLANG\Bin'
-Build target 'STM32F4_RCC'
-Code/src/InitRCC.c(39): error: use of undeclared identifier 'RCC_CFGR_PLLXTPRE_PREDIV1'
-        RCC->CFGR |= RCC_CFGR_PLLXTPRE_PREDIV1;                                         // PREDIV1 clock not divided for PLL entry.     
-                     ^
-Code/src/InitRCC.c(40): error: use of undeclared identifier 'RCC_CFGR_PLLM_8'
-        RCC->CFGR |= RCC_CFGR_PLLM_8;                                                           // PLL input clock*2: 24 MHz * 2 = 48 MHz.
-                     ^
-2 errors generated.
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\User Programs\Keil\ARM\ARMCC\Bin'
+Build target 'STM32F4_RCC_PLL_100MHz'
 compiling InitRCC.c...
-assembling startup_stm32f411xe.s...
-compiling main.c...
-CMSIS/src/system_stm32f4xx.c(870): warning: while loop has empty body [-Wempty-body]
-  while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
-                                                                   ^
-CMSIS/src/system_stm32f4xx.c(870): note: put the semicolon on a separate line to silence this warning
-1 warning generated.
-compiling system_stm32f4xx.c...
-".\Objects\STM32F4_RCC_PLL_100MHz.axf" - 2 Error(s), 1 Warning(s).
+linking...
+Program Size: Code=776 RO-data=424 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\STM32F4_RCC_PLL_100MHz.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
-                Keil.STM32F0xx_DFP.2.1.0
-                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+  C:\Users\Uladzislau Dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
