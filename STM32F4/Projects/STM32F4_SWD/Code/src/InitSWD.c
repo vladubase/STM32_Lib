@@ -47,6 +47,6 @@ void InitSWD (void) {
 	// GPIO_AFRH should be 0000: AF0 (SYS_AF).
 	// @note	Datasheet: 			Alternate function mapping.
 	// @note	Reference Manual: 	STM32F411xC/E register boundary addresses.
-	// [1] element - means Address offset of GPIOA: 0x24 - GPIO alternate function high register (GPIOx_AFRH).
-	GPIOA->AFR[1] &= ~(1 << 0);					// 0x40020000 + 0x24 == 0	-->		address GPIOA + AFRH offset.
+	// [1] element - means GPIO alternate function high register (GPIOx_AFRH).
+	GPIOA->AFR[1] &= ~(1 << 0);					// Clear 0th bit.
 }
