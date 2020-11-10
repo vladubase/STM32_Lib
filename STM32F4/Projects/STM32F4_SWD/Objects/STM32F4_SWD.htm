@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\Objects\STM32F4_SWD.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32F4_SWD.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Nov 10 22:50:08 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Nov 10 23:49:40 2020
 <BR><P>
-<H3>Maximum Stack Usage =          8 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         20 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-SystemInit
+SystemInit &rArr; SetSysClock
 <P>
 <H3>
 Functions with no stack information
@@ -529,12 +529,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5e]"></a>InitSWD</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, initswd.o(i.InitSWD))
+<P><STRONG><a name="[5e]"></a>InitSWD</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, initswd.o(i.InitSWD))
 <BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[45]"></a>SystemInit</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, system_stm32f4xx.o(i.SystemInit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SystemInit
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SystemInit &rArr; SetSysClock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
@@ -558,8 +558,10 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[5c]"></a>SetSysClock</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, system_stm32f4xx.o(i.SetSysClock))
-<BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<P><STRONG><a name="[5c]"></a>SetSysClock</STRONG> (Thumb, 216 bytes, Stack size 12 bytes, system_stm32f4xx.o(i.SetSysClock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 <P>
 <H3>

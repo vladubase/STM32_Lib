@@ -351,10 +351,10 @@
      – SB54, SB55 OFF
      – R35 removed
      – SB16, SB50 ON */
-/* #define USE_HSE_BYPASS */
+#define USE_HSE_BYPASS
 
 #if defined(USE_HSE_BYPASS)     
-#define HSE_BYPASS_INPUT_FREQUENCY   8000000
+#define HSE_BYPASS_INPUT_FREQUENCY   25000000
 #endif /* USE_HSE_BYPASS */    
 #endif /* STM32F410xx || STM32F411xE */
     
@@ -373,7 +373,7 @@
  #define PLL_M      8
 #elif defined (STM32F410xx) || defined (STM32F411xE)
  #if defined(USE_HSE_BYPASS)
-  #define PLL_M      8    
+  #define PLL_M      12    
  #else /* !USE_HSE_BYPASS */
   #define PLL_M      16
  #endif /* USE_HSE_BYPASS */
@@ -381,7 +381,7 @@
 #endif /* STM32F40_41xxx || STM32F427_437xx || STM32F429_439xx || STM32F401xx || STM32F469_479xx */  
 
 /* USB OTG FS, SDIO and RNG Clock =  PLL_VCO / PLLQ */
-#define PLL_Q      7
+#define PLL_Q      4
 
 #if defined(STM32F446xx)
 /* PLL division factor for I2S, SAI, SYSTEM and SPDIF: Clock =  PLL_VCO / PLLR */
@@ -410,9 +410,9 @@
 #endif /* STM32F401xx */
 
 #if defined(STM32F410xx) || defined(STM32F411xE) || defined(STM32F412xG) || defined(STM32F413_423xx)
-#define PLL_N      400
+#define PLL_N      96
 /* SYSCLK = PLL_VCO / PLL_P */
-#define PLL_P      4   
+#define PLL_P      2   
 #endif /* STM32F410xx || STM32F411xE || STM32F412xG || STM32F413_423xx */
 
 /******************************************************************************/
