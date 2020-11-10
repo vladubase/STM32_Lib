@@ -418,11 +418,6 @@
               <FileType>1</FileType>
               <FilePath>.\Code\src\InitSWD.c</FilePath>
             </File>
-            <File>
-              <FileName>InitMCO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Code\src\InitMCO.c</FilePath>
-            </File>
           </Files>
         </Group>
       </Groups>

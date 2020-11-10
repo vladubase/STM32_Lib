@@ -38,7 +38,7 @@ void InitRCC (void) {
 	
 	RCC->CFGR |= RCC_CFGR_PLLSRC_HSE; 					// HSE clock selected as PLL entry clock source.
 	RCC->CFGR |= RCC_CFGR_PLLXTPRE_HSE; 				// HSE clock not divided for PLL entry.
-	RCC->CFGR |= RCC_CFGR_PLLMULL9; 					// PLL input clock*9: 8 MHz * 9 = 72 MHz.
+	RCC->CFGR |= RCC_CFGR_PLLMULL9;						// PLL input clock*9: 8 MHz * 9 = 72 MHz.
 	
 	RCC->CR |= RCC_CR_PLLON;                      		// LL enable.
 	while(!(RCC->CR & RCC_CR_PLLRDY));      			// PLL clock ready flag.
@@ -46,5 +46,5 @@ void InitRCC (void) {
 	// System clock MUX - PLLCLK
 	RCC->CFGR &= ~RCC_CFGR_SW;                   		// Clear SW bits.
 	RCC->CFGR |= RCC_CFGR_SW_PLL;                 		// Select source SYSCLK = PLL.
-	while((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_1); // Wait till PLL is used.
+	while((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_PLL); // Wait till PLL is used.
 }
