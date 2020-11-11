@@ -4,8 +4,8 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.2
-	*	@date 		10-November-2020
+	*	@version	V1.3
+	*	@date 		11-November-2020
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F4/Projects/STM32F4_SWD
 	*
 *****/
@@ -33,13 +33,14 @@ void InitSWD (void) {
 	GPIOA->MODER |= GPIO_MODER_MODER14_1 | GPIO_MODER_MODER13_1;
 	
 	// Output push-pull (reset state).
-	GPIOA->OTYPER &= ~(GPIO_OTYPER_OT_14 | GPIO_OTYPER_OT_14);
+	GPIOA->OTYPER &= ~(GPIO_OTYPER_OT_14 | GPIO_OTYPER_OT_13);
 	
 	// High speed.
 	// @note	Refer to the product datasheet.
 	GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR14 | GPIO_OSPEEDER_OSPEEDR13;
 	
-	// PA14 pull-down, PA13 pull-up.
+	// PA14 SWCLK: input pull-down,
+	// PA13 SWDIO: input pull-up.
 	// @note	Reference Manual: General-purpose I/O (GPIO).	
 	//			The debug pins are in AF pull-up/pull-down after reset.
 	GPIOA->PUPDR |= GPIO_PUPDR_PUPDR14_1 | GPIO_PUPDR_PUPDR13_0;
