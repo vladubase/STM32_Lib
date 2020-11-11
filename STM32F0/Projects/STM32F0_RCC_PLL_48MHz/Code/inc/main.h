@@ -22,7 +22,6 @@
 
 // User headers
 #include "InitRCC.h"
-#include "InitSWD.h"
 
 
 #endif /* _MAIN_H_ */

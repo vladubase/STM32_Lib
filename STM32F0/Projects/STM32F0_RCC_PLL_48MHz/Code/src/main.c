@@ -24,7 +24,6 @@ int main (void) {
 		
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
-		InitSWD ();
 	
 	// MAIN CYCLE
 		while (1) {
