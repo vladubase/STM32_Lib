@@ -7,8 +7,8 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.2
-	*	@date 		2-November-2020
+	*	@version	V1.3
+	*	@date 		11-November-2020
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F4/Projects/STM32F4_RCC_PLL_100MHz
 	*
 *****/
