@@ -2,7 +2,6 @@
 #define _INIT_SWD_H_
 
 /****
-	*	@name		STM32F0_SWD
 	*	@file 		InitSWD.h
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka

@@ -4,7 +4,8 @@
 ".\objects\main.o"
 ".\objects\initrcc.o"
 ".\objects\initswd.o"
-".\objects\initusart.o"
+".\objects\inituart.o"
+".\objects\initgpio.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\STM32F0_USART.map" -o .\Objects\STM32F0_USART.axf

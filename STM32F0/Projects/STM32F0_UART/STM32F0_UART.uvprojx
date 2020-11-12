@@ -419,9 +419,14 @@
               <FilePath>.\Code\src\InitSWD.c</FilePath>
             </File>
             <File>
-              <FileName>InitUSART.c</FileName>
+              <FileName>InitUART.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Code\src\InitUSART.c</FilePath>
+              <FilePath>.\Code\src\InitUART.c</FilePath>
+            </File>
+            <File>
+              <FileName>InitGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\InitGPIO.c</FilePath>
             </File>
           </Files>
         </Group>

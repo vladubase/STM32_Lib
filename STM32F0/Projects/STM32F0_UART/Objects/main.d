@@ -9,15 +9,5 @@
 .\objects\main.o: C:\User Programs\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: .\Code\inc\InitRCC.h
 .\objects\main.o: .\Code\inc\InitSWD.h
-.\objects\main.o: .\Code\inc\InitUSART.h
-.\objects\main.o: .\FreeRTOS\inc\FreeRTOS.h
-.\objects\main.o: C:\User Programs\Keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\main.o: .\Code\inc\FreeRTOSConfig.h
-.\objects\main.o: .\FreeRTOS\inc\projdefs.h
-.\objects\main.o: .\FreeRTOS\inc\portable.h
-.\objects\main.o: .\FreeRTOS\inc\deprecated_definitions.h
-.\objects\main.o: .\FreeRTOS\inc\portmacro.h
-.\objects\main.o: .\FreeRTOS\inc\mpu_wrappers.h
-.\objects\main.o: .\FreeRTOS\inc\task.h
-.\objects\main.o: .\FreeRTOS\inc\list.h
-.\objects\main.o: .\FreeRTOS\inc\queue.h
+.\objects\main.o: .\Code\inc\InitGPIO.h
+.\objects\main.o: .\Code\inc\InitUART.h

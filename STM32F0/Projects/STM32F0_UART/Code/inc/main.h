@@ -1,17 +1,17 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-/****
-	*	@name		STM32F0_USART
-	*	@file 		main.h
-	*
-	*	@author 	Uladzislau 'vladubase' Dubatouka
-	*				<vladubase@gmail.com>
-	*	@version	V1.0
-	*	@date 		2-November-2020
-	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_USART
-	*
-*****/
+/**
+*	@name		STM32F0_PROJECT
+*	@file 		main.h
+*
+*	@author 	Uladzislau 'vladubase' Dubatouka
+*				<vladubase@gmail.com>
+*	@version	V1.0
+*	@date 		12-November-2020
+*	@link		https://github.com/vladubase/STM32_Lib
+*
+*/
 
 
 /************************************** Includes **************************************/
@@ -23,12 +23,8 @@
 // User headers
 #include "InitRCC.h"
 #include "InitSWD.h"
-#include "InitUSART.h"
-
-// FreeRTOS Init
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
+#include "InitGPIO.h"
+#include "InitUART.h"
 
 
 /************************************** Defines ***************************************/
