@@ -5,7 +5,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>.
 *	@version	V1.0
-*	@date 		13-November-2020
+*	@date 		18-November-2020
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
@@ -38,7 +38,7 @@ int main (void) {
 			
 			// Convert value of ADC to char*.
 			sprintf (ADC_result_str, "%u", ADC_result);
-			sprintf (ADC_voltage_str, "%.3f", ADC_result * ADC_STEP_VOLTS);
+			sprintf (ADC_voltage_str, "%.3f", ADC_result * ADC1_LSB);
 			
 			// Send ADC value.
 			USART1_SendString ("ADC value: ");
