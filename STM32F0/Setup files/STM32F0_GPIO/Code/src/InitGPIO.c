@@ -4,8 +4,8 @@
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
-	*	@version	V1.1
-	*	@date 		11-November-2020
+	*	@version	V1.2
+	*	@date 		10-January-2021
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_GPIO
 	*
 *****/
@@ -22,8 +22,6 @@ void InitGPIO (void) {
    /*
 	*	@brief	This function setup GPIO.
 	*			Port A4 as output on LED, Port B1 as input.
-	*	@param	None.
-	*	@retval	None.
 	*/
 	
 	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;			// GPIOA clock enable.
@@ -52,12 +50,12 @@ void InitGPIO (void) {
 	GPIOB->MODER &= ~GPIO_MODER_MODER1;
 	
 	// Output push-pull (reset state).
-	GPIOA->OTYPER &= ~GPIO_OTYPER_OT_1;
+	GPIOB->OTYPER &= ~GPIO_OTYPER_OT_1;
 	
 	// High speed.
 	// @note	Refer to the device datasheet.
-	GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR1;
+	GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR1;
 	
 	// Pull-down.
-	GPIOA->PUPDR |= GPIO_PUPDR_PUPDR1_1;
+	GPIOB->PUPDR |= GPIO_PUPDR_PUPDR1_1;
 }

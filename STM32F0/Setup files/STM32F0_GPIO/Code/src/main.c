@@ -3,9 +3,9 @@
 	*	@file 		main.c
 	*
 	*	@author 	Uladzislau 'vladubase' Dubatouka
-	*				<vladubase@gmail.com>.
-	*	@version	V1.0
-	*	@date 		11-November-2020
+	*				<vladubase@gmail.com>
+	*	@version	V1.1
+	*	@date 		10-January-2021
 	*	@link		https://github.com/vladubase/STM32_Lib
 	*
 *****/
@@ -20,7 +20,7 @@
 
 int main (void) {
 	// DEFINITION OF VARIABLES
-		uint32_t i = 0;
+		
 		
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
@@ -29,15 +29,11 @@ int main (void) {
 	
 	// MAIN CYCLE
 		while (true) {
-			// If button PB1 pushed - Blink LED PA4.
+			// If button pushed (PB1) (pull-up to 3.3V) - Turn ON LED PA4.
 			if (!(GPIOB->IDR & GPIO_IDR_1)) {
-				// Blink LED PC13.
-				GPIOC->ODR ^= GPIO_ODR_4;
-				for (i = 0; i < 8e5; i++)
-					__asm ("nop");
+				GPIOA->BSRR |= GPIO_BSRR_BS_4;
 			} else {
-				// Continuous light of PA4.
-				GPIOC->ODR &= ~GPIO_ODR_4;
+				GPIOA->BSRR |= GPIO_BSRR_BR_4;
 			}
 		}
 }
