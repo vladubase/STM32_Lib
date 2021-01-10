@@ -5,7 +5,7 @@
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
 	*	@version	V1.2
-	*	@date 		10-January-2020
+	*	@date 		10-January-2021
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_RCC_PLL_48MHz
 	*
 *****/
