@@ -413,11 +413,6 @@
               <FileType>1</FileType>
               <FilePath>.\Code\src\InitRCC.c</FilePath>
             </File>
-            <File>
-              <FileName>InitSWD.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Code\src\InitSWD.c</FilePath>
-            </File>
           </Files>
         </Group>
       </Groups>
