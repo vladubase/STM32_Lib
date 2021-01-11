@@ -4,8 +4,8 @@
 *
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
-*	@version	V1.1
-*	@date 		12-November-2020
+*	@version	V1.1.1
+*	@date 		11-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_UART
 *
 */
@@ -26,10 +26,9 @@ void InitUART (void) {
 /************************************** USART 1 ***************************************/
 
 void InitUSART1 (void) {
-/**
+/*
 *	@brief	This function setup USART 1.
-*	@param	None.
-*	@retval	None.
+*	
 */
 	
 	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;			// GPIOA clock enable.
@@ -63,12 +62,9 @@ void InitUSART1 (void) {
 	// No pull-up, pull-down.
 	GPIOA->PUPDR &= ~GPIO_PUPDR_PUPDR10;
 	
-	/* ************************* Baud rate *********************** */
-	// 
+	/* Baud rate */
 	USART1->BRR = (f_AHB + USART1_BAUDRATE / 2) / USART1_BAUDRATE;
 	
-	/* *********************************************************** */
-	// 
 	USART1->CR1 |= USART_CR1_RE |				// Receiver Enable.
 				   USART_CR1_TE |				// Transmitter Enable.
 				   USART_CR1_UE;				// USART Enable.
@@ -81,8 +77,7 @@ void InitUSART1 (void) {
 }
 
 void USART1_SendByte (char chr) {
-	// Wait Transmission complete flag.
-	while (!(USART1->ISR & USART_ISR_TC));
+	while (!(USART1->ISR & USART_ISR_TC));		// Wait Transmission complete flag.
 	
 	USART1->RDR = chr;
 }

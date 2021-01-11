@@ -7,8 +7,8 @@
 *
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
-*	@version	V1.1
-*	@date 		12-November-2020
+*	@version	V1.2
+*	@date 		11-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_UART
 *
 */
@@ -23,7 +23,6 @@
 
 #define f_AHB			((uint32_t)	48e6)
 #define USART1_BAUDRATE	((uint32_t)	9600)
-#define USART2_BAUDRATE	((uint32_t)	9600)
 
 
 /********************************* Function  prototypes *******************************/
