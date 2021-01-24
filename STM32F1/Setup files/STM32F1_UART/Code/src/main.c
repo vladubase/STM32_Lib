@@ -5,7 +5,7 @@
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>.
 	*	@version	V1.0
-	*	@date 		1-November-2020
+	*	@date 		24-January-2021
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_UART
 	*
 *****/
@@ -27,6 +27,7 @@ int main (void) {
 		InitSWD ();
 		InitGPIO ();
 		InitUART ();
+		InitMCO ();
 	
 	// FREERTOS TASKS
 		xTaskCreate (vTaskUSART2SendMessage, "Send message via USART 2", 32, NULL, 1, NULL);
@@ -55,10 +56,7 @@ void vTaskUSART2SendMessage (void *arg) {
 	*	@retval	None
 	*/
 	
+	USART2SendString ("Hello World");				// Send number 2		
+	vTaskDelay (1);
 	
-	while (true) {
-		USART2SendByte (0x32);				// Send number 2
-		
-		vTaskDelay (1000);
-	} 
 }

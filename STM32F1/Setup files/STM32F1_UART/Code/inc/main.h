@@ -8,7 +8,7 @@
 	*	@author 	Uladzislau 'vladubase' Dubatouka
 	*				<vladubase@gmail.com>
 	*	@version	V1.0
-	*	@date 		1-November-2020
+	*	@date 		24-January-2021
 	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F1/Projects/STM32F1_UART
 	*
 *****/
@@ -25,6 +25,7 @@
 #include "InitSWD.h"
 #include "InitGPIO.h"
 #include "InitUART.h"
+#include "InitMCO.h"
 
 // FreeRTOS Init
 #include "FreeRTOS.h"

@@ -6,6 +6,7 @@
 ".\objects\initswd.o"
 ".\objects\initgpio.o"
 ".\objects\inituart.o"
+".\objects\initmco.o"
 ".\objects\croutine.o"
 ".\objects\event_groups.o"
 ".\objects\heap_1.o"
