@@ -5,7 +5,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>.
 *	@version	V1.0
-*	@date 		11-January-2021
+*	@date 		25-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
@@ -30,7 +30,7 @@ int main (void) {
 	
 	// MAIN CYCLE
 		while (1) {
-			USART1_SendByte (0x32);				// Send number 2.
+			USART1_SendString ("Hello!");
 		}
 }
 

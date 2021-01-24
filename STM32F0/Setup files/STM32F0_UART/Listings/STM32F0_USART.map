@@ -23,7 +23,7 @@ Section Cross References
     main.o(i.main) refers to initswd.o(i.InitSWD) for InitSWD
     main.o(i.main) refers to initgpio.o(i.InitGPIO) for InitGPIO
     main.o(i.main) refers to inituart.o(i.InitUSART1) for InitUSART1
-    main.o(i.main) refers to inituart.o(i.USART1_SendByte) for USART1_SendByte
+    main.o(i.main) refers to inituart.o(i.USART1_SendString) for USART1_SendString
     inituart.o(i.InitUART) refers to inituart.o(i.InitUSART1) for InitUSART1
     inituart.o(i.USART1_SendString) refers to inituart.o(i.USART1_SendByte) for USART1_SendByte
     __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
@@ -290,13 +290,13 @@ Image Symbol Table
     i.InitRCC                                0x08000270   Section        0  initrcc.o(i.InitRCC)
     i.InitSWD                                0x08000314   Section        0  initswd.o(i.InitSWD)
     i.InitUSART1                             0x0800033c   Section        0  inituart.o(i.InitUSART1)
-    i.SetSysClock                            0x08000418   Section        0  system_stm32f0xx.o(i.SetSysClock)
-    SetSysClock                              0x08000419   Thumb Code   206  system_stm32f0xx.o(i.SetSysClock)
-    i.SystemInit                             0x080004f0   Section        0  system_stm32f0xx.o(i.SystemInit)
-    i.USART1_IRQHandler                      0x0800056c   Section        0  main.o(i.USART1_IRQHandler)
-    i.USART1_SendByte                        0x080005e4   Section        0  inituart.o(i.USART1_SendByte)
-    i.USART1_SendString                      0x08000600   Section        0  inituart.o(i.USART1_SendString)
-    i.main                                   0x0800061c   Section        0  main.o(i.main)
+    i.SetSysClock                            0x08000400   Section        0  system_stm32f0xx.o(i.SetSysClock)
+    SetSysClock                              0x08000401   Thumb Code   206  system_stm32f0xx.o(i.SetSysClock)
+    i.SystemInit                             0x080004d8   Section        0  system_stm32f0xx.o(i.SystemInit)
+    i.USART1_IRQHandler                      0x08000554   Section        0  main.o(i.USART1_IRQHandler)
+    i.USART1_SendByte                        0x080005cc   Section        0  inituart.o(i.USART1_SendByte)
+    i.USART1_SendString                      0x080005e8   Section        0  inituart.o(i.USART1_SendString)
+    i.main                                   0x08000604   Section        0  main.o(i.main)
     .bss                                     0x20000000   Section       96  libspace.o(.bss)
     HEAP                                     0x20000060   Section      512  startup_stm32f030.o(HEAP)
     Heap_Mem                                 0x20000060   Data         512  startup_stm32f030.o(HEAP)
@@ -435,14 +435,14 @@ Image Symbol Table
     InitGPIO                                 0x0800021d   Thumb Code    78  initgpio.o(i.InitGPIO)
     InitRCC                                  0x08000271   Thumb Code   154  initrcc.o(i.InitRCC)
     InitSWD                                  0x08000315   Thumb Code    34  initswd.o(i.InitSWD)
-    InitUSART1                               0x0800033d   Thumb Code   202  inituart.o(i.InitUSART1)
-    SystemInit                               0x080004f1   Thumb Code   110  system_stm32f0xx.o(i.SystemInit)
-    USART1_IRQHandler                        0x0800056d   Thumb Code    92  main.o(i.USART1_IRQHandler)
-    USART1_SendByte                          0x080005e5   Thumb Code    22  inituart.o(i.USART1_SendByte)
-    USART1_SendString                        0x08000601   Thumb Code    28  inituart.o(i.USART1_SendString)
-    main                                     0x0800061d   Thumb Code    26  main.o(i.main)
-    Region$$Table$$Base                      0x08000638   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08000648   Number         0  anon$$obj.o(Region$$Table)
+    InitUSART1                               0x0800033d   Thumb Code   184  inituart.o(i.InitUSART1)
+    SystemInit                               0x080004d9   Thumb Code   110  system_stm32f0xx.o(i.SystemInit)
+    USART1_IRQHandler                        0x08000555   Thumb Code    92  main.o(i.USART1_IRQHandler)
+    USART1_SendByte                          0x080005cd   Thumb Code    22  inituart.o(i.USART1_SendByte)
+    USART1_SendString                        0x080005e9   Thumb Code    28  inituart.o(i.USART1_SendString)
+    main                                     0x08000605   Thumb Code    26  main.o(i.main)
+    Region$$Table$$Base                      0x08000628   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000638   Number         0  anon$$obj.o(Region$$Table)
     __libspace_start                         0x20000000   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x20000060   Data           0  libspace.o(.bss)
 
@@ -454,9 +454,9 @@ Memory Map of the image
 
   Image Entry point : 0x0800013d
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00000648, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00000638, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000648, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000638, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -519,23 +519,22 @@ Memory Map of the image
     0x0800021c   0x0800021c   0x00000054   Code   RO          194    i.InitGPIO          initgpio.o
     0x08000270   0x08000270   0x000000a4   Code   RO          113    i.InitRCC           initrcc.o
     0x08000314   0x08000314   0x00000028   Code   RO          133    i.InitSWD           initswd.o
-    0x0800033c   0x0800033c   0x000000dc   Code   RO          154    i.InitUSART1        inituart.o
-    0x08000418   0x08000418   0x000000d8   Code   RO           12    i.SetSysClock       system_stm32f0xx.o
-    0x080004f0   0x080004f0   0x0000007c   Code   RO           14    i.SystemInit        system_stm32f0xx.o
-    0x0800056c   0x0800056c   0x00000078   Code   RO           65    i.USART1_IRQHandler  main.o
-    0x080005e4   0x080005e4   0x0000001c   Code   RO          155    i.USART1_SendByte   inituart.o
-    0x08000600   0x08000600   0x0000001c   Code   RO          156    i.USART1_SendString  inituart.o
-    0x0800061c   0x0800061c   0x0000001a   Code   RO           66    i.main              main.o
-    0x08000636   0x08000636   0x00000002   PAD
-    0x08000638   0x08000638   0x00000010   Data   RO          389    Region$$Table       anon$$obj.o
+    0x0800033c   0x0800033c   0x000000c4   Code   RO          154    i.InitUSART1        inituart.o
+    0x08000400   0x08000400   0x000000d8   Code   RO           12    i.SetSysClock       system_stm32f0xx.o
+    0x080004d8   0x080004d8   0x0000007c   Code   RO           14    i.SystemInit        system_stm32f0xx.o
+    0x08000554   0x08000554   0x00000078   Code   RO           65    i.USART1_IRQHandler  main.o
+    0x080005cc   0x080005cc   0x0000001c   Code   RO          155    i.USART1_SendByte   inituart.o
+    0x080005e8   0x080005e8   0x0000001c   Code   RO          156    i.USART1_SendString  inituart.o
+    0x08000604   0x08000604   0x00000024   Code   RO           66    i.main              main.o
+    0x08000628   0x08000628   0x00000010   Data   RO          389    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08000648, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08000638, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x08000648, Size: 0x00000660, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x08000638, Size: 0x00000660, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -554,15 +553,15 @@ Image component sizes
         84          6          0          0          0        423   initgpio.o
        164         10          0          0          0        466   initrcc.o
         40          6          0          0          0        402   initswd.o
-       276         24          0          0          0       7227   inituart.o
-       146         28          0          0          0        915   main.o
+       252         18          0          0          0       7227   inituart.o
+       156         38          0          0          0        915   main.o
        116         56        180          0       1536        680   startup_stm32f030.o
        340         24          0          0          0     163537   system_stm32f0xx.o
 
     ----------------------------------------------------------------------
-      1168        154        196          0       1536     173650   Object Totals
+      1152        158        196          0       1536     173650   Object Totals
          0          0         16          0          0          0   (incl. Generated)
-         2          0          0          0          0          0   (incl. Padding)
+         0          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -608,15 +607,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1412        170        196          0       1632     173686   Grand Totals
-      1412        170        196          0       1632     173686   ELF Image Totals
-      1412        170        196          0          0          0   ROM Totals
+      1396        174        196          0       1632     173686   Grand Totals
+      1396        174        196          0       1632     173686   ELF Image Totals
+      1396        174        196          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 1608 (   1.57kB)
+    Total RO  Size (Code + RO Data)                 1592 (   1.55kB)
     Total RW  Size (RW Data + ZI Data)              1632 (   1.59kB)
-    Total ROM Size (Code + RO Data + RW Data)       1608 (   1.57kB)
+    Total ROM Size (Code + RO Data + RW Data)       1592 (   1.55kB)
 
 ==============================================================================
 

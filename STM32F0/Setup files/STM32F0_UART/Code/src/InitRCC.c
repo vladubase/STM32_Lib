@@ -42,7 +42,7 @@ void InitRCC (void) {
 		RCC_CFGR_PLLMULL6; 						// PLL input clock * 6: 8 MHz * 6 = 48 MHz.
 	
 	RCC->CR |= RCC_CR_PLLON;					// PLL enable.
-	while(!(RCC->CR & RCC_CR_PLLRDY));      // PLL clock ready flag.
+	while(!(RCC->CR & RCC_CR_PLLRDY));      	// PLL clock ready flag.
 	
 	/* System clock MUX - PLLCLK */
 	RCC->CFGR |= (uint32_t)RCC_CFGR_SW_PLL;		// Select source SYSCLK = PLL.

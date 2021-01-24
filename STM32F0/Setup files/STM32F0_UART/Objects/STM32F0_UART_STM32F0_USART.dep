@@ -8,8 +8,8 @@ I (D:\User Programs\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
 I (.\CMSIS\inc\core_cmInstr.h)(0x5FFA24C8)
 I (.\CMSIS\inc\core_cmFunc.h)(0x5FFA24C8)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x5FFA24C8)
-F (.\Code\src\main.c)(0x5FFB7882)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Code\inc\main.h)(0x5FFA24C8)
+F (.\Code\src\main.c)(0x600DE35E)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Code\inc\main.h)(0x600DDCFB)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5FFA24C8)
 I (.\CMSIS\inc\core_cm0.h)(0x5FFA24C8)
 I (D:\User Programs\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -20,8 +20,8 @@ I (D:\User Programs\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
 I (.\Code\inc\InitRCC.h)(0x5FFA24C8)
 I (.\Code\inc\InitSWD.h)(0x5FFA24C8)
 I (.\Code\inc\InitGPIO.h)(0x5FFA24C8)
-I (.\Code\inc\InitUART.h)(0x5FFB776F)
-F (.\Code\src\InitRCC.c)(0x5FFB689A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initrcc.o --omf_browse .\objects\initrcc.crf --depend .\objects\initrcc.d)
+I (.\Code\inc\InitUART.h)(0x600DE748)
+F (.\Code\src\InitRCC.c)(0x600DD764)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initrcc.o --omf_browse .\objects\initrcc.crf --depend .\objects\initrcc.d)
 I (.\Code\inc\InitRCC.h)(0x5FFA24C8)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5FFA24C8)
 I (.\CMSIS\inc\core_cm0.h)(0x5FFA24C8)
@@ -37,14 +37,15 @@ I (D:\User Programs\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
 I (.\CMSIS\inc\core_cmInstr.h)(0x5FFA24C8)
 I (.\CMSIS\inc\core_cmFunc.h)(0x5FFA24C8)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x5FFA24C8)
-F (.\Code\src\InitUART.c)(0x5FFC0DB1)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\inituart.o --omf_browse .\objects\inituart.crf --depend .\objects\inituart.d)
-I (.\Code\inc\InitUART.h)(0x5FFB776F)
+F (.\Code\src\InitUART.c)(0x600DE35A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\inituart.o --omf_browse .\objects\inituart.crf --depend .\objects\inituart.d)
+I (.\Code\inc\InitUART.h)(0x600DE748)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5FFA24C8)
 I (.\CMSIS\inc\core_cm0.h)(0x5FFA24C8)
 I (D:\User Programs\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
 I (.\CMSIS\inc\core_cmInstr.h)(0x5FFA24C8)
 I (.\CMSIS\inc\core_cmFunc.h)(0x5FFA24C8)
 I (.\CMSIS\inc\system_stm32f0xx.h)(0x5FFA24C8)
+I (D:\User Programs\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
 F (.\Code\src\InitGPIO.c)(0x5FFA24C8)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F0_USART -I .\CMSIS\inc -I .\Code\inc -I .\FreeRTOS\inc-IC:\Users\installer\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-I"D:\User Programs\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F030x6-o .\objects\initgpio.o --omf_browse .\objects\initgpio.crf --depend .\objects\initgpio.d)
 I (.\Code\inc\InitGPIO.h)(0x5FFA24C8)
 I (.\CMSIS\inc\stm32f0xx.h)(0x5FFA24C8)
