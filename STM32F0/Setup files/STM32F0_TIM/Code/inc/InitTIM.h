@@ -7,8 +7,8 @@
 *
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
-*	@version	V1.0
-*	@date 		14-November-2020
+*	@version	V1.0.1
+*	@date 		25-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_TIM
 *
 */
@@ -23,14 +23,14 @@
 
 /************************************** Defines ***************************************/
 
-#define TIM1_PSC	((uint16_t)	48 - 1)			// Prescaller.
-#define TIM1_ARR	((uint16_t)	1000)			// Period.
+#define TIM14_PSC	((uint16_t)	48 - 1)			// Prescaller.
+#define TIM14_ARR	((uint16_t)	1000)			// Period.
 
 
 /********************************* Function  prototypes *******************************/
 
 void InitTIM (void);
-void InitTIM1 (void);
+void InitTIM14 (void);
 
 
 #endif /* _INIT_TIM_H_ */

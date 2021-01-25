@@ -5,7 +5,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>.
 *	@version	V1.0
-*	@date 		14-November-2020
+*	@date 		25-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
@@ -32,13 +32,8 @@ int main (void) {
 	// MAIN CYCLE
 		while (true) {
 			// Dimming LED on A4.
-			for (i = 0; i < TIM1_ARR; i++) {
+			for (i = 0; i < TIM14_ARR; i++) {
 				TIM2->CCR1 = i;						// CH1 duty cycle.
-			}
-			
-			// Delay 5 ms.
-			for (delay = 0; delay < 240e3; delay++) {
-				__asm ("nop");
 			}
 		}
 }
