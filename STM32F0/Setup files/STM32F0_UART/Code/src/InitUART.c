@@ -50,7 +50,8 @@ void InitUSART1 (void) {
 	// @note	Refer to the device datasheet.
 	GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR10;
 	
-	GPIOA->AFR[1] = (1 << (1 * 4)) | (1 << (2 * 4));
+	// Alternative function selection.
+	GPIOA->AFR[1] = (0x01 << (1 * 4)) | (1 << (2 * 4));
 	
 	USART1->CR1 |= USART_CR1_UE;				// USART Enable.
 	USART1->CR1 &= ~USART_CR1_M;				// Word - 8 data bits.
