@@ -6,3 +6,4 @@
 .\objects\inituart.o: .\CMSIS\inc\core_cmInstr.h
 .\objects\inituart.o: .\CMSIS\inc\core_cmFunc.h
 .\objects\inituart.o: .\CMSIS\inc\system_stm32f0xx.h
+.\objects\inituart.o: C:\User Programs\Keil\ARM\ARMCC\Bin\..\include\stdbool.h

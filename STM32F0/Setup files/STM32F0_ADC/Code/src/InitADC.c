@@ -4,8 +4,8 @@
 *
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
-*	@version	V1.1
-*	@date 		18-November-2020
+*	@version	V1.2
+*	@date 		27-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_ADC
 *
 */
@@ -50,11 +50,11 @@ void InitADC1CH1 (void) {
 	/* ************************ Calibration ********************** */	
 	if (ADC1->CR & ADC_CR_ADEN)					// ADC enable command should be turned off.
 		ADC1->CR |= ADC_CR_ADDIS;				// ADC disable command.
-	while (!(ADC1->CR & ADC_CR_ADEN));
+	while ((ADC1->CR & ADC_CR_ADEN) != 0);
 	ADC1->CFGR1 &= ~ADC_CFGR1_DMAEN;			// DMA disabled.
 	
 	ADC1->CR |= ADC_CR_ADCAL;					// ADC calibration.
-	while (!(ADC1->CR & ADC_CR_ADCAL));			// Read at 1 means that a calibration is in progress.
+	while (ADC1->CR & ADC_CR_ADCAL);		// Read at 1 means that a calibration is in progress.
 	
 	
 	/* *********************************************************** */

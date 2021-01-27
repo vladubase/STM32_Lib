@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\STM32F0_ADC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32F0_ADC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Nov 18 10:02:09 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Jan 27 22:57:27 2021
 <BR><P>
 <H3>Maximum Stack Usage =        368 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -57,7 +57,7 @@ Function Pointers
  <LI><a href="#[17]">TIM1_BRK_UP_TRG_COM_IRQHandler</a> from startup_stm32f030.o(.text) referenced from startup_stm32f030.o(RESET)
  <LI><a href="#[18]">TIM1_CC_IRQHandler</a> from startup_stm32f030.o(.text) referenced from startup_stm32f030.o(RESET)
  <LI><a href="#[19]">TIM3_IRQHandler</a> from startup_stm32f030.o(.text) referenced from startup_stm32f030.o(RESET)
- <LI><a href="#[22]">USART1_IRQHandler</a> from main.o(i.USART1_IRQHandler) referenced from startup_stm32f030.o(RESET)
+ <LI><a href="#[22]">USART1_IRQHandler</a> from startup_stm32f030.o(.text) referenced from startup_stm32f030.o(RESET)
  <LI><a href="#[23]">USART2_IRQHandler</a> from startup_stm32f030.o(.text) referenced from startup_stm32f030.o(RESET)
  <LI><a href="#[c]">WWDG_IRQHandler</a> from startup_stm32f030.o(.text) referenced from startup_stm32f030.o(RESET)
  <LI><a href="#[2a]">__main</a> from __main.o(!!!main) referenced from startup_stm32f030.o(.text)
@@ -337,6 +337,9 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f030.o(RESET)
 </UL>
 <P><STRONG><a name="[19]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f030.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f030.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>USART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f030.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f030.o(RESET)
 </UL>
 <P><STRONG><a name="[23]"></a>USART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f030.o(.text))
@@ -643,7 +646,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[71]"></a>InitUSART1</STRONG> (Thumb, 202 bytes, Stack size 0 bytes, inituart.o(i.InitUSART1))
+<P><STRONG><a name="[71]"></a>InitUSART1</STRONG> (Thumb, 160 bytes, Stack size 0 bytes, inituart.o(i.InitUSART1))
 <BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -653,13 +656,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f030.o(.text)
-</UL>
-<P><STRONG><a name="[22]"></a>USART1_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, main.o(i.USART1_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USART1_IRQHandler &rArr; USART1_SendString
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendString
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f030.o(RESET)
 </UL>
 <P><STRONG><a name="[6d]"></a>USART1_SendByte</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, inituart.o(i.USART1_SendByte))
 <BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendString
@@ -671,7 +667,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
 <P><STRONG><a name="[61]"></a>__ARM_common_ll_muluu</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, btod.o(i.__ARM_common_ll_muluu))

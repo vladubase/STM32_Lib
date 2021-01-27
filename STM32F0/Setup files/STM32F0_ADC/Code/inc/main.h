@@ -8,7 +8,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
 *	@version	V1.0
-*	@date 		18-November-2020
+*	@date 		27-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
@@ -27,11 +27,6 @@
 #include "InitGPIO.h"
 #include "InitUART.h"
 #include "InitADC.h"
-
-
-/************************************** Defines ***************************************/
-
-
 
 
 #endif /* _MAIN_H_ */

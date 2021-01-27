@@ -7,8 +7,8 @@
 *
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
-*	@version	V1.1
-*	@date 		18-November-2020
+*	@version	V1.2
+*	@date 		27-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_ADC
 *
 */
@@ -21,7 +21,7 @@
 
 /************************************** Defines ***************************************/
 
-#define ADC1_LSB	((float)	3.3 / 4096)		// ADC Least significant bit. LSB = Vref / (2 ^ 12-bit res).
+#define ADC1_LSB	((float)	3.363 / 4096)	// ADC Least significant bit. LSB = Vref / (2 ^ 12-bit res).
 
 
 /********************************* Function  prototypes *******************************/
