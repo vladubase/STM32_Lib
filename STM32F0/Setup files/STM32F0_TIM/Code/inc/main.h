@@ -8,7 +8,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
 *	@version	V1.0
-*	@date 		25-January-2021
+*	@date 		29-January-2021
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
