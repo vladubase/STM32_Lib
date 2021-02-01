@@ -8,7 +8,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
 *	@version	V1.0
-*	@date 		27-January-2021
+*	@date 		1-February-2021
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
@@ -24,7 +24,6 @@
 // User headers
 #include "InitRCC.h"
 #include "InitSWD.h"
-#include "InitGPIO.h"
 #include "InitUART.h"
 #include "InitADC.h"
 

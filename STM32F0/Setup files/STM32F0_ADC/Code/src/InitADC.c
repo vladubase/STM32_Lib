@@ -4,8 +4,8 @@
 *
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>
-*	@version	V1.2
-*	@date 		27-January-2021
+*	@version	V1.2.1
+*	@date 		1-February-2021
 *	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F0/Projects/STM32F0_ADC
 *
 */
@@ -25,8 +25,6 @@ void InitADC (void) {
 void InitADC1CH1 (void) {
 /**
 *	@brief	This function setup ADC1 channel 1.
-*	@param	None.
-*	@retval	None.
 */
 	
 	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;			// I/O port A clock enable.
@@ -35,7 +33,7 @@ void InitADC1CH1 (void) {
 	RCC->CR2 |= RCC_CR2_HSI14ON;				// HSI14 oscillator ON.
 	while (!(RCC->CR2 & RCC_CR2_HSI14RDY));		// HSI14 oscillator ready flag.
 	
-	/* ************************* PA0 ADC0 *********************** */
+	/* ************************* PA0 ADC1 *********************** */
 	// Analog mode.
 	GPIOA->MODER |= GPIO_MODER_MODER0;
 	
@@ -54,7 +52,7 @@ void InitADC1CH1 (void) {
 	ADC1->CFGR1 &= ~ADC_CFGR1_DMAEN;			// DMA disabled.
 	
 	ADC1->CR |= ADC_CR_ADCAL;					// ADC calibration.
-	while (ADC1->CR & ADC_CR_ADCAL);		// Read at 1 means that a calibration is in progress.
+	while (ADC1->CR & ADC_CR_ADCAL);			// Read at 1 means that a calibration is in progress.
 	
 	
 	/* *********************************************************** */

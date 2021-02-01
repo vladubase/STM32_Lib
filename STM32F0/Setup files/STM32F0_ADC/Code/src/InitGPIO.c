@@ -20,26 +20,24 @@
 void InitGPIO (void) {
 /**
 *	@brief	This function setup GPIO.
-*			Port A4 as output on LED.
-*	@param	None.
-*	@retval	None.
+*			Port B1 as output.
 */
 	
-	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;			// GPIOA clock enable.
+	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;			// GPIOB clock enable.
 	
 	
-	/* **************************** PA4 ************************** */
+	/* **************************** PB1 ************************** */
 	
 	// General purpose output mode.
-	GPIOA->MODER |= GPIO_MODER_MODER4_0;
+	GPIOB->MODER |= GPIO_MODER_MODER1_0;
 	
 	// Output push-pull (reset state).
-	GPIOA->OTYPER &= ~GPIO_OTYPER_OT_4;
+	GPIOB->OTYPER &= ~GPIO_OTYPER_OT_1;
 	
 	// High speed.
 	// @note	Refer to the device datasheet.
-	GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR4;
+	GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR1;
 	
 	// Pull-up.
-	GPIOA->PUPDR |= GPIO_PUPDR_PUPDR4_0;
+	GPIOB->PUPDR |= GPIO_PUPDR_PUPDR1_0;
 }

@@ -5,7 +5,7 @@
 *	@author 	Uladzislau 'vladubase' Dubatouka
 *				<vladubase@gmail.com>.
 *	@version	V1.0
-*	@date 		27-January-2021
+*	@date 		1-February-2021
 *	@link		https://github.com/vladubase/STM32_Lib
 *
 */
@@ -28,7 +28,6 @@ int main (void) {
 	// MICROCONTROLLER INITIALIZATION
 		InitRCC ();
 		InitSWD ();
-		InitGPIO ();
 		InitUSART1 ();
 		InitADC ();
 	
@@ -51,7 +50,7 @@ int main (void) {
 			USART1_SendString (" V\r\n\n");
 			
 			// No operation 1 sec.
-			for (i = 0; i < 48e4; i++)
+			for (i = 0; i < 1e5; i++)
 				__asm ("nop");
 		}
 }
