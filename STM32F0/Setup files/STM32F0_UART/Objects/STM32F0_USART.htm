@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\STM32F0_USART.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32F0_USART.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Jan 25 23:49:32 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Feb 02 18:19:59 2021
 <BR><P>
 <H3>Maximum Stack Usage =         20 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -385,6 +385,7 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[3b]"></a>USART1_SendByte</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, inituart.o(i.USART1_SendByte))
 <BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendString
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[3a]"></a>USART1_SendString</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, inituart.o(i.USART1_SendString))
@@ -392,14 +393,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
 <P><STRONG><a name="[30]"></a>main</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main &rArr; USART1_SendString
-</UL>
-<BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendString
+<BR><BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_SendByte
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUSART1
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSWD
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitRCC
