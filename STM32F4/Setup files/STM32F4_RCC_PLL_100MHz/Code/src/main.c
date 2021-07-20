@@ -5,8 +5,7 @@
  *	@author 	Uladzislau 'vladubase' Dubatouka
  *				<vladubase@gmail.com>.
  *	@version	V1.0
- *	@date 		19-July-2021
- *	@link		https://github.com/vladubase/STM32_Lib
+ *	@date 		20-July-2021
  ******************************************************************************/
 
 #include "main.h"
@@ -17,11 +16,12 @@
 
 int main (void) {
 	// DEFINITION OF VARIABLES
-	uint32_t i = 0;
+	
 	
 	// MICROCONTROLLER INITIALIZATION
 	InitSystem ();
 	InitRCC ();
+	InitSWD ();
 	
 	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
 	GPIOC->MODER |= GPIO_MODER_MODER13_0;		// 0b01:	General purpose output mode.
@@ -31,10 +31,9 @@ int main (void) {
 	
 	// MAIN CYCLE
 	while (true) {
-		GPIOC->ODR ^= GPIO_ODR_ODR_13;
-		
-		for (i = 0; i < ((500e3 / 1000) * 500); i++) {
-			__ASM ("NOP");
-		}
+		GPIOC->BSRRL |= GPIO_BSRR_BS_13;
+		delay_ms (5e6);
+		GPIOC->BSRRH |= GPIO_BSRR_BS_13;
+		delay_ms (5e6);
 	}
 }

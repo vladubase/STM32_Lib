@@ -9,3 +9,4 @@
 .\objects\main.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\main.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: .\Code\inc\InitRCC.h
+.\objects\main.o: .\Code\inc\InitSWD.h
