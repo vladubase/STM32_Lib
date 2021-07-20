@@ -1,25 +1,23 @@
 #ifndef _INIT_SWD_H_
 #define _INIT_SWD_H_
 
-/****
-	*	@name		STM32F4_SWD
-	*	@file 		InitSWD.h
-	*
-	*	@author 	Uladzislau 'vladubase' Dubatouka
-	*				<vladubase@gmail.com>
-	*	@version	V1.2
-	*	@date 		10-November-2020
-	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F4/Projects/STM32F4_SWD
-	*
-*****/
+/*******************************************************************************
+ *	@name		STM32F4_SWD
+ *	@file 		InitSWD.h
+ *
+ *	@author 	Uladzislau 'vladubase' Dubatouka
+ *				<vladubase@gmail.com>
+ *	@version	V1.0
+ *	@date 		20-July-2021
+ ******************************************************************************/
 
 
-/************************************** Includes **************************************/
+/********************************** Includes **********************************/
 
 #include "stm32f4xx.h"
 
 
-/********************************* Function  prototypes *******************************/
+/***************************** Function  prototypes ***************************/
 
 void InitSWD (void);
 

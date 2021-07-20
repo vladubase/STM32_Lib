@@ -1,27 +1,42 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-/****
-	*	@name		STM32F4_MCO
-	*	@file 		main.h
-	*
-	*	@author 	Uladzislau 'vladubase' Dubatouka
-	*				<vladubase@gmail.com>
-	*	@version	V1.0
-	*	@date 		10-November-2020
-	*	@link		https://github.com/vladubase/STM32_Lib/tree/main/STM32F4/Projects/STM32F4_MCO
-	*
-*****/
+/*******************************************************************************
+ *	@name		STM32F4_MCO
+ *	@file 		main.h
+ *
+ *	@author 	Uladzislau 'vladubase' Dubatouka
+ *				<vladubase@gmail.com>
+ *	@version	V1.0
+ *	@date 		20-July-2021
+ ******************************************************************************/
 
 
-/************************************** Includes **************************************/
+/********************************** Includes **********************************/
 
 #include "stm32f4xx.h"
+
+#include "stdint.h"
+#include "stdbool.h"
 
 // User headers
 #include "InitRCC.h"
 #include "InitSWD.h"
 #include "InitMCO.h"
 
+
+/*********************************** Defines **********************************/
+
+
+
+/********************************** Functions *********************************/
+
+void InitSystem (void) {
+	SCB->CPACR |= ((3UL << 10*2) | (3UL << 11*2));	// Enable Hardware Floating Point.
+}
+
+void delay_ms (uint32_t time) {
+	while (time--);
+}
 
 #endif /* _MAIN_H_ */
