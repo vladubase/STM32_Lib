@@ -1,6 +1,6 @@
 /*******************************************************************************
  *	@name		STM32F4_GPIO
- *	@file 		InitRCC.c
+ *	@file 		InitGPIO.c
  *
  *	@author 	Uladzislau 'vladubase' Dubatouka
  *				<vladubase@gmail.com>
@@ -17,8 +17,6 @@
  *	@brief	This function setup General Purpose Input/Output.
  *			LED		PC13	Output
  *			KEY		PA0		Input
- *	@param	None.
- *	@retval	None.
  */
 void InitGPIO (void) {
 	// Setup LED PC13
