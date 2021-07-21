@@ -1,0 +1,61 @@
+Dependencies for Project 'STM32F4_UART', Target 'STM32F4_UART': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\Startup\startup_stm32f411xe.s)(0x60F52CFC)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 535" --pd "STM32F411xE SETA 1"--list .\listings\startup_stm32f411xe.lst --xref -o .\objects\startup_stm32f411xe.o --depend .\objects\startup_stm32f411xe.d)
+F (.\CMSIS\src\system_stm32f4xx.c)(0x60F558BD)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F4_UART -I .\CMSIS\inc -I .\Code\inc-IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F411xE-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (.\CMSIS\inc\stm32f4xx.h)(0x60F7D408)
+I (.\CMSIS\inc\core_cm4.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (.\CMSIS\inc\core_cmInstr.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmFunc.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmSimd.h)(0x60F52CFC)
+I (.\CMSIS\inc\system_stm32f4xx.h)(0x60F52CFC)
+F (.\Code\src\main.c)(0x60F7E419)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F4_UART -I .\CMSIS\inc -I .\Code\inc-IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F411xE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Code\inc\main.h)(0x60F7D755)
+I (.\CMSIS\inc\stm32f4xx.h)(0x60F7D408)
+I (.\CMSIS\inc\core_cm4.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (.\CMSIS\inc\core_cmInstr.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmFunc.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmSimd.h)(0x60F52CFC)
+I (.\CMSIS\inc\system_stm32f4xx.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x602569CC)
+I (.\Code\inc\InitRCC.h)(0x60F7DA46)
+I (.\Code\inc\InitSWD.h)(0x60F6A097)
+I (.\Code\inc\InitGPIO.h)(0x60F6C158)
+I (.\Code\inc\InitUART.h)(0x60F7E32D)
+F (.\Code\src\InitRCC.c)(0x60F6C5C0)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F4_UART -I .\CMSIS\inc -I .\Code\inc-IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F411xE-o .\objects\initrcc.o --omf_browse .\objects\initrcc.crf --depend .\objects\initrcc.d)
+I (.\Code\inc\InitRCC.h)(0x60F7DA46)
+I (.\CMSIS\inc\stm32f4xx.h)(0x60F7D408)
+I (.\CMSIS\inc\core_cm4.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (.\CMSIS\inc\core_cmInstr.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmFunc.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmSimd.h)(0x60F52CFC)
+I (.\CMSIS\inc\system_stm32f4xx.h)(0x60F52CFC)
+F (.\Code\src\InitSWD.c)(0x60F6A1BC)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F4_UART -I .\CMSIS\inc -I .\Code\inc-IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F411xE-o .\objects\initswd.o --omf_browse .\objects\initswd.crf --depend .\objects\initswd.d)
+I (.\Code\inc\InitSWD.h)(0x60F6A097)
+I (.\CMSIS\inc\stm32f4xx.h)(0x60F7D408)
+I (.\CMSIS\inc\core_cm4.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (.\CMSIS\inc\core_cmInstr.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmFunc.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmSimd.h)(0x60F52CFC)
+I (.\CMSIS\inc\system_stm32f4xx.h)(0x60F52CFC)
+F (.\Code\src\InitGPIO.c)(0x60F7D931)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F4_UART -I .\CMSIS\inc -I .\Code\inc-IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F411xE-o .\objects\initgpio.o --omf_browse .\objects\initgpio.crf --depend .\objects\initgpio.d)
+I (.\Code\inc\InitGPIO.h)(0x60F6C158)
+I (.\CMSIS\inc\stm32f4xx.h)(0x60F7D408)
+I (.\CMSIS\inc\core_cm4.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (.\CMSIS\inc\core_cmInstr.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmFunc.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmSimd.h)(0x60F52CFC)
+I (.\CMSIS\inc\system_stm32f4xx.h)(0x60F52CFC)
+F (.\Code\src\InitUART.c)(0x60F7DE1C)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\STM32F4_UART -I .\CMSIS\inc -I .\Code\inc-IC:\Users\u.dubatouka\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F411xE-o .\objects\inituart.o --omf_browse .\objects\inituart.crf --depend .\objects\inituart.d)
+I (.\Code\inc\InitUART.h)(0x60F7E32D)
+I (.\CMSIS\inc\stm32f4xx.h)(0x60F7D408)
+I (.\CMSIS\inc\core_cm4.h)(0x60F52CFC)
+I (C:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (.\CMSIS\inc\core_cmInstr.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmFunc.h)(0x60F52CFC)
+I (.\CMSIS\inc\core_cmSimd.h)(0x60F52CFC)
+I (.\CMSIS\inc\system_stm32f4xx.h)(0x60F52CFC)
